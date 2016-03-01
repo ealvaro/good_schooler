@@ -12,8 +12,9 @@ rake db:migrate
 rake db:seed
 ```
 
-### Start the webserver
+### Start the webserver to test it
 ```
 rails s
 ```
-Please feel free to use this project as an introduction to a Ruby on Rails tutorial. 
+Open a browser and type http://localhost:300
+Please feel free to use this project as an introduction to a Ruby on Rails tutorial  
