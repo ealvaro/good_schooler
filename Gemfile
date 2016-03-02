@@ -41,6 +41,10 @@ group :development, :test do
   gem 'byebug'
   # Rspec gem
   gem "rspec-rails"
+  # For testing purposes
+  gem 'capybara-webkit'
+  # Launches my browser
+  gem 'launchy'
 end
 
 group :development do
