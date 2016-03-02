@@ -6,9 +6,10 @@ class UsersController < ApplicationController
   # GET /users.json
   # Login / Logout Demonstration (make sure view is changed as well)
   def index
-    render json: session
-    message = (session[:id] == 1 ? 'logged in' : 'logged out')
-    #render plain: message
+    @users = User.all
+    # render json: session
+    # message = (session[:id] == 1 ? 'logged in' : 'logged out')
+    # #render plain: message
   end
 
   def login
