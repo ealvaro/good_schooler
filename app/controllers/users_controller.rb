@@ -25,14 +25,14 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    p "Hello World"
+    #p "Hello World"
     #head 404
     #render xml: @user
     #render json: @user
     #render inline: '<%= Time.now %>'
-    if session[:id] != 1
-      render plain: "You are not allowed to view this page"
-    end
+    # if session[:id] != 1
+    #   render plain: "You are not allowed to view this page"
+    # end
     #render plain: "Kool"
     #render 'users/home'
     #render file: 'home.html'
