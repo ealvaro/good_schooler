@@ -16,8 +16,8 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= link_to user.id, user_path(user) %></td>
-        <td><%= boldify(user.name) %></td>
+        <td><%= user.id%></td>
+        <td><%= link_to boldify(user.name), user_path(user)  %></td>
         <td><%= user.email %></td>
         <td><%= user.code_school.name if user.code_school %></td>
         <td><%= time_ago_in_words user.created_at %></td>
