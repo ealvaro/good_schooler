@@ -32,8 +32,9 @@
   <div class="form-group">
     <%= f.label :code_school_id, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.select :code_school_id, 1..5, :class => 'form-control' %>
-    </div>
+      <%= collection_select(:user, :code_school_id, CodeSchool.all, :id, :name) %>
+<!--       <%= f.select :code_school_id, 1..5, :class => 'form-control' %>
+ -->    </div>
     <%=f.error_span(:code_school_id) %>
   </div>
 
